@@ -1,0 +1,100 @@
+$header_height: 80px;
+
+$header_items_cnt_height: 60px;
+
+header {
+    width: 100%;
+    height: $header_height;
+    background-color: $color-secondary-transparent;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    
+    .container, .row {
+        height: 100%;
+        
+        .heading-cnt{
+           height: $header_items_cnt_height;
+            line-height: $header_items_cnt_height;
+
+            .logo-cnt {
+                height: $header_items_cnt_height;
+                line-height: $header_items_cnt_height;
+                            
+                img {
+                    max-width: 80px;
+                }
+            }
+    
+        }
+
+        .nav-items-cnt {
+            height: $header_items_cnt_height;
+            line-height: $header_items_cnt_height;
+            
+            .nav-item {
+                display: none;
+
+                a {
+                    font-size: 20px;
+                    color: #fff;
+                    font-weight: 200;
+                
+                    &:hover {
+                        font-weight: 600;
+
+                    }
+                }
+            }
+
+            .hamburger-menu-icon {
+                font-size: 15px;
+                
+            }
+
+            
+        }
+    }
+
+    
+}
+
+
+
+
+@include media-breakpoint-up(sm) { 
+
+}
+
+@include media-breakpoint-up(md) {
+
+    header {    
+    
+        .container, .row {            
+            
+            .nav-items-cnt {                
+                
+                .nav-item {
+                    display: block;
+                    height: $header_items_cnt_height / 1.5;
+                    line-height: $header_items_cnt_height / 1.5;
+                    width: 15%;
+                    text-align: center;
+                    /* border-right: 1px solid black;
+                    border-left: 1px solid black; */
+                }                
+            
+            }
+        }
+
+    
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    
+    header {
+      
+    }
+
+ }
