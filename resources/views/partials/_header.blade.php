@@ -3,7 +3,7 @@
     <div class="container px-0">
         <div class="row no-gutters d-flex justify-content-between align-items-center">
            
-            <div class="heading-cnt col-8 col-md-5 col-lg-4 d-flex align-items-center justify-content-between">
+            <div class="heading-cnt col-8 col-md-6 col-lg-5 d-flex align-items-center justify-content-between">
                 
                 <div class="logo-cnt col-6 col-md-4 px-0 d-flex align-items-center">
                     <img class="col-8 col-sm-6 mx-auto px-0 img-fluid" src="images/logo/booleanahotel-logo-nobg.png" alt="">
@@ -19,7 +19,7 @@
 
             </div>
 
-            <div class="nav-items-cnt col-3 col-md-7 col-lg-7 d-flex align-items-center justify-content-around">
+            <div class="nav-items-cnt col-3 col-md-6 col-lg-7 d-flex align-items-center justify-content-around">
                 <div class="nav-item"> <a href=" {{ route('homepage') }} ">Home</a> </div>
                 <div class="nav-item"> <a href="">Gallery</a> </div>
                 <div class="nav-item"> <a href=" {{ route('rooms') }}">Rooms</a> </div>

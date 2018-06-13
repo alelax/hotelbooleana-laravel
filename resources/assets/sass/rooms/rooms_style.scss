@@ -1,0 +1,132 @@
+$suqare_height_xs : 200px;
+$suqare_height_sm : 250px;
+$suqare_height_lg : 400px;
+
+
+div.room-cnt {
+
+    div.square.img-cnt {
+        height: $suqare_height_xs;
+        //background-color: antiquewhite;
+        img {
+            height: $suqare_height_xs;
+            max-width: 100%;
+        }
+    }
+
+    div.square.text-cnt {
+        height: $suqare_height_xs;
+        color: #fff;
+        margin-bottom: 25px;
+
+        h2.room-name {
+            font-size: 30px;
+            font-weight: 100;
+            .initial {
+                font-weight: 500;
+            }        
+        }
+
+        p.room-description {
+            font-size: 17px;
+            line-height: 22px;
+            font-weight: 200;
+        }
+
+        div.btn-cnt .room-btn {
+            padding: 10px 20px;
+            background-color: #fcfcfc00;
+            border: 1px solid #fff;
+            color: #fff;
+            border-radius: 3px;
+            font-size: 15px;
+            font-weight: 100;
+            cursor: pointer;
+        
+            /* &:hover {
+                color: #4300ecf5;
+                background-color: #f1eedc99;
+                border: 1px solid #4300ecf5;
+                
+            } */
+        
+        }
+
+        
+    }
+
+}
+
+
+
+@include media-breakpoint-up(sm) { 
+    div.room-cnt {
+
+        div.square.img-cnt {
+            height: $suqare_height_sm;
+            img {
+                height: $suqare_height_sm;
+            }
+        }
+        
+
+    }
+}
+
+@include media-breakpoint-up(md) { 
+    div.room-cnt {
+        div.square.text-cnt {
+           
+            margin-bottom: 0;
+        }    
+
+        div.square.room-features {
+
+            color: #fff;
+            font-weight: 200;
+            line-height: 10px;
+            p {
+                height: 20px;
+                margin: 5px 0;
+            }
+        }
+        
+    }
+}
+
+@include media-breakpoint-up(lg) { 
+    div.room-cnt {
+
+        div.square.img-cnt {
+            height: $suqare_height_lg;
+            //background-color: antiquewhite;
+            img {
+                height: $suqare_height_lg;
+            }
+        }
+
+        div.square.text-cnt {
+            height: $suqare_height_lg;
+            margin-bottom: 0;
+            
+
+            p.room-description {
+                font-size: 18px;
+                line-height: 28px;
+                font-weight: 300;
+            }
+
+
+            div.btn-cnt .room-btn {
+                padding: 20px 40px;                
+            }
+
+        }
+        
+    }
+}
+
+
+div.room-cnt.last {
+    padding-bottom: 100px;
+}

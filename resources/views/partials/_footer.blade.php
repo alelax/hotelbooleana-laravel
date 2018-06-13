@@ -16,10 +16,10 @@
                 
                 <div class="section-foot col-12 col-md-4 px-0 ">
                     <ul class="info-items">
-                        <li class="info-item">Via: dell'adleodl</li>
+                        <li class="info-item">Tel: 0245-025060</li>
                         <li class="info-item">Fax: 0255-025060</li>
                         <li class="info-item">Mail: info@booleanahotel.com</li>
-                        <li class="info-item">Tel: 0245-025060</li>
+                        <li class="info-item">Via dell'adleodl, Mallorca, Spain</li>
                     </ul>
                 </div>  
                 
