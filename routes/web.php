@@ -27,3 +27,15 @@ Route::get('/restaurant', function () {
 Route::get('/spa', function () {
     return view('spa.index');
 }) -> name('spa');
+
+
+//Admin routes
+Route::get('/admin/rooms', 'BookingController@showRooms') -> name('admin.rooms');
+
+Route::get('/admin/bookings/{idRoom}', 'BookingController@showRoomBookings') -> name('admin.bookings');
+
+Route::get('/admin/bookings/delete/{idBooking}', 'BookingController@deleteBooking') -> name('admin.bookingdelete');
+
+Route::get('/admin/add', 'BookingController@getRoomsNumber') -> name('admin.newbooking');
+
+Route::post('/admin/add/reservation', 'BookingController@addBooking') -> name('admin.bookingadd');
